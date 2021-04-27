@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f6f8f9;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+  height: 617px;
+  background-color: white;
+}
+
+.left-section > img[src="kajabi-logo.png"] {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.sign-in {
+  text-align: center;
+  padding: 50px 0 15px;
+}
+
+.sign-in > h3 {
+  padding-bottom: 15px;
+}
+
+.sign-in > p {
+  font-size: 13px;
+}
+
+.sign-in > p > a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.left-section > form {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.left-section > form > input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.left-section > form > input:focus {
+  outline: none;
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.checkbox {
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#remember {
+  margin-right: 8px;
+}
+
+.checkbox > label {
+  font-size: 13px;
+}
+
+.left-section > form > button {
+  width: 100%;
+  background-color: #2e91fc;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.left-section > form > button:hover {
+  cursor: pointer;
+}
+
+.forgot-password {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.forgot-password > a {
+  display: block;
+  color: #697887;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 770px) {
+  .container {
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.1);
+    height: 525px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    background-color: white;
+    display: flex;
+  }
+
+  .left-section {
+    width: 50%;
+  }
+
+  .right-section {
+    width: 50%;
+    background-image: url("smiling-lady.jpg");
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .description {
+    padding: 0 50px 30px 30px;
+  }
+
+  .description > img {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .description > p {
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .description {
+    display: none;
+  }
+}
